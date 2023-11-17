@@ -12,9 +12,9 @@ display.start()
 def test():
 	print("Starting testing")
 	time.sleep(5)
-	driver = uc.Chrome(headless=False,use_subprocess=False)
+	driver = uc.Chrome(headless=False, use_subprocess=False)
 	driver.get('https://nowsecure.nl')
-	driver.save_screenshot('nowsecure.png')	
+	driver.save_screenshot('/shared/nowsecure.png')	
 	print("Ending testing")
 if __name__ == "__main__":
 	test()
